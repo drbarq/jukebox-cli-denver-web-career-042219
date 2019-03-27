@@ -57,12 +57,19 @@ end
 
 
 
+<<<<<<< HEAD
 def run(songs)
 
+=======
+def run
+
+  help
+>>>>>>> 30930133aa66cc605d41586622b01eb9b4c81379
   puts "Please enter a command:"
 
   command = gets.chomp
 
+<<<<<<< HEAD
   if command == "help"
     help
   elsif command == "list"
@@ -72,4 +79,18 @@ def run(songs)
   elsif command == "exit"
     exit_jukebox
   end
+=======
+  while command != "exit"
+
+    if command == "help"
+      help
+    elsif command == "list"
+      list
+    elsif condition == "play"
+      play
+    end
+  end
+exit_jukebox
+exit
+>>>>>>> 30930133aa66cc605d41586622b01eb9b4c81379
 end
